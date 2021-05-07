@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Callbacks</h2>
+
+<p id="demo"></p>
+
+<script>
+let myPromise = new Promise(function(Resolve, Reject) {
+	setTimeout(function() {Resolve("i love coding");}, 3000);
+});
+myPromise.then(function(value) {document.getElementById('demo').innerHTML = value});
+</script>
+
+</body>
+</html>
