@@ -1,0 +1,27 @@
+* {
+	margin:0;
+	padding:0;
+}
+html {
+
+	background: radial-gradient(rgba(255, 199, 225, 0.5), rgba(255, 0, 255, 0.5));
+	text-align: center;
+	
+	}
+	#pa {
+		margin-top: 10px;
+	}
+	#p {
+		text-align: center;
+		margin-top: 75px;
+	}
+	#input {
+		margin-top: 55px;
+		padding: 5px;
+	}
+	button {
+		height: 35px;
+		width: 75px;
+		border: 3px solid lightblue;
+		border-radius: 4px;
+	}
