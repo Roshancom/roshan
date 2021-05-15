@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js animation</title>
+</head>
+<style type="text/css">
+	#container
+	{
+		width: 400px;
+		height: 400px;
+		position:relative;
+		background: black;
+		margin: auto;
+	}
+	#animation
+	{
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		background: red;
+
+	}
+	#a1
+	{
+	width: 40px;
+		height: 40px;
+		position: absolute;
+		background: red;	
+	}
+	#a2
+	{
+	width: 40px;
+		height: 40px;
+		position: absolute;
+		background: red;
+		}	
+	#a3
+	{
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		background: red;
+		align-items: center;
+	}
+	#but
+	{
+		    height: 43px;
+    width: 121px;
+    border-radius: 28px;
+    display: grid;
+    font-size: x-large;
+	}
+</style>
+<body>
+	<button id="but" onclick="myMouse()">click on..</button>
+<div id="container">
+	<div id="animation"></div>
+	<div id="a1"></div>
+	<div id="a2"></div>
+	<div id="a3"></div>
+</div>
+<script type="text/javascript">
+let id = null;
+let id1 = null;
+let id2 = null;
+	function myMouse() {
+		let elm = document.getElementById('animation');
+		let elm1 = document.getElementById('a1');
+		let elm2 = document.getElementById('a2');
+		let pos = 0;
+		clearInterval(id);
+		id = setInterval(frame);
+		function frame() {
+			if (pos == 360) {
+				clearInterval(id);
+			}
+			else{
+				pos++;
+				elm.style.top = pos + "px";
+				elm.style.left = pos + "px";
+			}
+		}
+		clearInterval(id1);
+		id1 = setInterval(fr1);
+		function fr1() {
+			if (pos == 360) {
+				clearInterval(id1);
+			}
+			else {
+				pos++;
+				elm1.style.top = pos + "px";
+				elm1.style.left = pos;
+			}
+		}
+		clearInterval(id2);
+		id2 = setInterval(fr2);
+		function fr2() {
+			if (pos == 360) {
+				clearInterval(id2);
+			}
+			else {
+				pos++;
+				elm2.style.top = pos ;
+				elm2.style.left = pos + "px";
+			}
+		}
+	}	
+</script>
+</body>
+</html>
