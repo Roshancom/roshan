@@ -10,6 +10,7 @@
 		height: 400px;
 		position:relative;
 		background: black;
+		margin: auto;
 	}
 	#animation
 	{
@@ -17,6 +18,7 @@
 		height: 40px;
 		position: absolute;
 		background: red;
+
 	}
 	#a1
 	{
@@ -40,9 +42,18 @@
 		background: red;
 		align-items: center;
 	}
+	#but
+	{
+		    height: 43px;
+    width: 121px;
+    border-radius: 28px;
+    display: grid;
+    font-size: x-large;
+	}
 </style>
 <body>
-	<div id="container">
+	<button id="but" onclick="myMouse()">click on..</button>
+<div id="container">
 	<div id="animation"></div>
 	<div id="a1"></div>
 	<div id="a2"></div>
@@ -95,6 +106,5 @@ let id2 = null;
 		}
 	}	
 </script>
-<button onclick="myMouse()">click on..</button>
 </body>
 </html>
